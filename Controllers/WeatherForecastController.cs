@@ -1,9 +1,11 @@
+using ApiKeyExample.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiKeyExample.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[ApiKey]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
